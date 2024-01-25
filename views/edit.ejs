@@ -1,0 +1,23 @@
+<body>
+    <h1>Sửa sản phẩm </h1>
+    <form action="/update/<%= productUpdate.ID%>" method="post">
+
+        <label for="productCodeEdit" style="display: flex;"> Mã Sản Phẩm : </label>
+        <input type="text" id="productCodeEdit" name="idEdit" value="<%= productUpdate.ID%>" >
+
+        <label for="productNameEdit" style="display: flex;"> Tên Sản Phẩm : </label>
+        <input type="text" id="productNameEdit" name="nameEdit" value="<%= productUpdate.Name%>"  required>
+
+        <label for="productDatilEdit" style="display: flex;">Thông tin sản phẩm : </label>
+        <input type="text" id="productDatilEdit" name="DetailEdit"  value="<%= productUpdate.Detail%>" required>
+
+        <label for="productPriceEdit" style="display: flex;">Giá Sản Phẩm : </label>
+        <input type="text" id="productPriceEdit" name="priceEdit"  value="<%= productUpdate.Price%>" required> <br>
+
+        <input type="submit" value="Sửa" style="display: flex;">
+    </form>
+</body>
+
+
+
+

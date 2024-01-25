@@ -1,0 +1,73 @@
+
+[{
+  "_id": {
+    "$oid": "65b1d44d4a05a4f03eba5971"
+  },
+  "ID": 24,
+  "Name": "Hoang",
+  "Detail": "Thạch thôn",
+  "Price": 1.599
+},
+{
+  "_id": {
+    "$oid": "65b1d44d4a05a4f03eba5972"
+  },
+  "ID": 32,
+  "Name": "Thiên",
+  "Detail": "Thạch thôn",
+  "Price": 1.999
+},
+{
+  "_id": {
+    "$oid": "65b1d44d4a05a4f03eba5973"
+  },
+  "ID": 26,
+  "Name": "Đế",
+  "Detail": "Thạch thôn",
+  "Price": 1.563
+},
+{
+  "_id": {
+    "$oid": "65b1d44d4a05a4f03eba5974"
+  },
+  "ID": 31,
+  "Name": "Thạch",
+  "Detail": "Thạch thôn",
+  "Price": 1.984
+},
+{
+  "_id": {
+    "$oid": "65b207bb07901b369a4c6309"
+  },
+  "Detail": "Thạch thôn",
+  "ID": 22,
+  "Name": "Hạo",
+  "Price": 1.251
+},
+{
+  "_id": {
+    "$oid": "65b20fee07901b369a4c6314"
+  },
+  "Detail": "Thạch thôn",
+  "ID": 22,
+  "Name": "Vương",
+  "Price": 1.251
+},
+{
+  "_id": {
+    "$oid": "65b2100307901b369a4c6315"
+  },
+  "Detail": "Thạch thôn",
+  "ID": 25,
+  "Name": "Thiên",
+  "Price": 1.521
+},
+{
+  "_id": {
+    "$oid": "65b2100f07901b369a4c6316"
+  },
+  "ID": 31,
+  "Name": "Đế",
+  "Detail": "Thạch thôn",
+  "Price": 1.542
+}]

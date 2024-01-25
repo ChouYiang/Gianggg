@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 8px;
+            margin: 5px;
+        }
+        input[type="search"] {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            height: 30px;
+            width: 300px;
+        }
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<h1>Quản lý Sản phẩm</h1>
+<form action="/search" method="GET">
+    <input type="search" name="term" placeholder="Tìm kiếm ">
+    <button type="submit">Tìm kiếm</button>
+</form>
+<br>
+<br>
+<table id="productTable">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>ID</th>
+            <th>Tên Sản phẩm</th>
+            <th>Thông tin sản phẩm</th>
+            <th>Giá</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let i = 0; i < products.length; i++) { %>
+            <tr>
+                <td><%= i + 1 %></td>
+                <td><%= products[i].ID %></td>
+                <td><%= products[i].Name %></td>
+                <td><%= products[i].Detail %></td>
+                <td><%= products[i].Price %>.000 Vnđ</td>
+                <td>
+                    <a href="/edit/<%= products[i].ID  %>">Sửa</a>
+                    <a href="/delete/<%= products[i].ID  %>">Xóa</a>
+                </td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+<a href="/canter">Thêm Sản Phẩm</a>
+
+</html>
